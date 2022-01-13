@@ -31,11 +31,12 @@ import java.util.Arrays;
 import junit.framework.Assert;
 import junit.framework.TestCase;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class XmiTestCase extends TestCase {
 
-  private static Logger logger = Logger.getLogger(XmiTestCase.class.getName());
+  private static Logger logger = LogManager.getLogger(XmiTestCase.class.getName());
 
   private XmiInOutHandler handler = null;
   private String filename;

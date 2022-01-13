@@ -49,7 +49,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jaxen.JaxenException;
 import org.jaxen.jdom.JDOMXPath;
 import org.jdom.Attribute;
@@ -65,7 +66,7 @@ import org.jdom.output.XMLOutputter;
  */
 public class ArgoUMLDefaultImpl extends DefaultXmiHandler {
 
-  private static Logger logger = Logger.getLogger(ArgoUMLDefaultImpl.class.getName());
+  private static Logger logger = LogManager.getLogger(ArgoUMLDefaultImpl.class.getName());
   
   protected Element rootElement;
   

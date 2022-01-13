@@ -46,11 +46,12 @@ import org.jdom.input.SAXBuilder;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public abstract class EABaseImpl extends DefaultXmiHandler {
 
-  private static Logger logger = Logger.getLogger(EABaseImpl.class.getName());
+  private static Logger logger = LogManager.getLogger(EABaseImpl.class.getName());
   
   protected Element rootElement;
   

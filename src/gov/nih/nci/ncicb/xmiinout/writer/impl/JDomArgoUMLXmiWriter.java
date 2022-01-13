@@ -52,14 +52,15 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jdom.Attribute;
 import org.jdom.Element;
 import org.jdom.Namespace;
 
 public class JDomArgoUMLXmiWriter implements UMLWriter {
 
-	private static Logger logger = Logger.getLogger(JDomArgoUMLXmiWriter.class
+	private static Logger logger = LogManager.getLogger(JDomArgoUMLXmiWriter.class
 			.getName());
 
 	private ArgoJDomXmiTransformer argoJDomXmiTransformer = new ArgoJDomXmiTransformer();

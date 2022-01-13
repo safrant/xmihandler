@@ -22,7 +22,8 @@ import org.jdom.output.*;
 import org.jaxen.JaxenException;
 import org.jaxen.jdom.JDOMXPath;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 
@@ -31,7 +32,7 @@ import java.io.*;
  */
 public class EADefaultImpl extends EABaseImpl {
 
-	private static Logger logger = Logger.getLogger(EADefaultImpl.class.getName());
+	private static Logger logger = LogManager.getLogger(EADefaultImpl.class.getName());
 
 	protected List<UMLDatatype> doDataTypes(Element modelElt) {
 		Namespace ns = Namespace.getNamespace("omg.org/UML1.3");

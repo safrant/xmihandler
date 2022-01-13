@@ -22,11 +22,12 @@ import java.util.List;
 import junit.framework.Assert;
 import junit.framework.TestCase;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class SDKTestModelOperations extends TestCase {
 
-	private static Logger logger = Logger.getLogger(SDKTestModel_TestCase.class.getName());
+	private static Logger logger = LogManager.getLogger(SDKTestModel_TestCase.class.getName());
 
 	private XmiInOutHandler handler = null;
 	private String filename;

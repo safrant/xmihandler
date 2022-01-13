@@ -17,12 +17,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Collection;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jdom.Element;
 import org.jdom.Namespace;
 
 public class UMLModelBean extends JDomDomainObject implements UMLModel {
-  private static Logger logger = Logger.getLogger(JDomDomainObject.class.getName());
+  private static Logger logger = LogManager.getLogger(JDomDomainObject.class.getName());
   private List<UMLPackage> packages = new ArrayList<UMLPackage>();
   private List<UMLClass> classes = new ArrayList<UMLClass>();
   private List<UMLInterface> interfaces = new ArrayList<UMLInterface>();

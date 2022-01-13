@@ -30,14 +30,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jdom.Attribute;
 import org.jdom.Element;
 import org.jdom.Namespace;
 
 public class ArgoJDomXmiTransformer extends JDomXmiTransformer {
 	
-  private static Logger logger = Logger.getLogger(ArgoJDomXmiTransformer.class
+  private static Logger logger = LogManager.getLogger(ArgoJDomXmiTransformer.class
                                                   .getName());
   
    private Map<String, UMLTagDefinitionBean> tagDefinitionsByNameMap = new HashMap<String, UMLTagDefinitionBean>();

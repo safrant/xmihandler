@@ -32,7 +32,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jdom.Attribute;
 import org.jdom.Element;
 import org.jdom.Namespace;
@@ -45,7 +46,7 @@ public class JDomXmiTransformer {
 
 	protected List<UMLOperationParameterBean> paramWithMissingDatatypes = new ArrayList<UMLOperationParameterBean>();
 	
-	private static Logger logger = Logger.getLogger(JDomXmiTransformer.class
+	private static Logger logger = LogManager.getLogger(JDomXmiTransformer.class
 			.getName());
 
 	void addDatatype(UMLDatatype datatype) {

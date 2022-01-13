@@ -13,11 +13,12 @@ import gov.nih.nci.ncicb.xmiinout.handler.impl.EABaseImpl;
 
 import java.util.*;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ModelUtil {
 
-  private static Logger logger = Logger.getLogger(ModelUtil.class.getName());
+  private static Logger logger = LogManager.getLogger(ModelUtil.class.getName());
   /**
    * Util method to find a package in a model given it's fully qualified name. <br>
    * Packages are separated by '.'. <br> Sample query string could be:
